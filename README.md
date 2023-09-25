@@ -22,26 +22,26 @@ Projektet möjliggör en enkel hantering av böcker via HTTP-anrop till API:et.
 
 
 # CREATE
-{
+
     "BookName": "Skriv bokens namn här",
     "Author": "Skriv författarens namn här"
-}
-////////////////////
+
+
 # READ
     Behöver ingen JSON
 
-////////////////////
+
 # UPDATE
-{
+
     "OldBookName": "Skriv namnet på befintliga boken som du vill ändra",
     "NewBookName": "Skriv nya bokens namn här",
     "NewAuthor": "Skriv författarens namn här"
-}
-////////////////////
+
+
 # DELETE
-{
+
     "BookName": "Namnet på boken du vill ta bort"
-} 
+
 
 
 
