@@ -2,7 +2,7 @@ const AWS = require('aws-sdk');
 const dynamoClient = new AWS.DynamoDB.DocumentClient({ region: 'eu-north-1' });
 
 exports.handler = async (event) => {
-    const { OldBookName, NewBookName, NewAuthor } = event.body;
+    const { OldBookName, NewBookName, NewAuthor } = JSON.parse(event.body);
 
     // Sök efter böcker som matchar det gamla namnet
     const searchParams = {

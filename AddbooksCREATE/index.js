@@ -3,7 +3,7 @@ const dynamoClient = new AWS.DynamoDB.DocumentClient({ region: 'eu-north-1' });
 
 exports.handler = async (event) => {
    
-    const { BookName, Author } = event.body;
+    const { BookName, Author } = JSON.parse(event.body);
 
     const params = {
         TableName: 'Books',

@@ -3,7 +3,7 @@ const dynamoClient = new AWS.DynamoDB.DocumentClient({ region: 'eu-north-1' });
 
 exports.handler = async (event) => {
     
-    const { BookName } = event.body; // Ta emot bokens namn
+    const { BookName } = JSON.parse(event.body); // Ta emot bokens namn
 
     // Sök efter böcker som matchar det angivna namnet
     const searchParams = {
