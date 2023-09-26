@@ -42,6 +42,7 @@ Projektet möjliggör en enkel hantering av böcker via HTTP-anrop till API:et.
 
     "BookName": "Namnet på boken du vill ta bort"
 
-
+#  Invoke URL: 
+https://e7edpe7nlb.execute-api.eu-north-1.amazonaws.com/V1/books
 
 
